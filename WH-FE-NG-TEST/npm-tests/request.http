@@ -1,0 +1,10 @@
+###
+POST http://localhost:8080/save
+Content-Type: application/json
+
+{
+    "firstname":"<b>Ifeanyi</b>",
+    "lastname":"<h1>Okorie</h1>"
+}
+###
+GET http://localhost:8080/get-name

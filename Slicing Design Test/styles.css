@@ -1,0 +1,500 @@
+@font-face {
+  font-family: "ProximaNovaThin";
+  src: url("Proxima-Nova\ProximaNova-Thinlt.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaReg";
+  src: url("./Proxima-Nova/ProximaNova-Reg.otf") format("opentype");
+  /* font-weight: normal; */
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("./Proxima-Nova/ProximaNova-Bold.otf") format("opentype");
+  /* font-weight: bold; */
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #23143a;
+  margin: 0;
+}
+.navbar {
+  width: 100%;
+  height: 61px;
+  min-height: 60px;
+  background-color: white;
+  margin-bottom: 0;
+  top: 20vh;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nabar-ul-mobile {
+  display: none;
+}
+.nabar-ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2px 0;
+  width: 100%;
+}
+.nabar-ul li {
+  padding: 2px;
+  display: block;
+}
+.nabar-ul li a {
+  list-style: none;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 600;
+  font-family: "ProximaNovaReg";
+}
+.content {
+  width: 100%;
+  min-height: 160vh;
+
+  margin-top: 0;
+}
+.banner {
+  background-color: #23143a;
+  width: 100%;
+  /* min-height: 95vh; */
+  height: 94vh;
+  background-image: url(./images/banner1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 0;
+  padding-top: 0;
+}
+.credit_opportunity {
+  min-height: 80vh;
+  height: 90vh;
+  background-color: #f0f2f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 4rem;
+}
+.credit_opportunity_description {
+  align-self: flex-start;
+  line-height: 1.5;
+  margin-top: 2rem;
+  font-size: xx-large;
+  font-family: "ProximaNovaBold";
+}
+.credit_opportunity_wrapper {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 2rem 4rem;
+}
+.credit_opportunity_wrapper hr {
+  border: none;
+  height: 1.5px;
+  background: rgb(134, 131, 131);
+}
+
+.ratings_Wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.ratings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ratings img {
+  width: 70%;
+}
+.barclaycard_desc {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barclaycard_desc h3 {
+  width: 100%;
+  font-size: x-large;
+  font-weight: 500;
+  font-family: "ProximaNovaReg";
+}
+.payment_promo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center; */
+}
+.left_wrapper {
+  flex: 1;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 1rem;
+}
+.card_odds {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.credit_card_img {
+  flex: 1;
+  width: 100%;
+  /* margin-right: 1rem; */
+  border-radius: 12px;
+  box-sizing: content-box;
+}
+.credit_card_img img {
+  width: 190px;
+  border-radius: 12px;
+}
+.approval_wrapper {
+  flex: 1;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  margin-top: 0;
+  align-self: baseline;
+  /* margin-bottom: 1rem; */
+  margin-left: 1rem;
+}
+.approval_wrapper .button {
+  background-color: rgb(34, 197, 197);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  padding: 3px;
+  border-radius: 35px;
+}
+.approval_wrapper .button button {
+  background-color: rgb(34, 197, 197);
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 35px;
+  color: white;
+  font-weight: 600;
+}
+.odds_approval {
+  /* align-self: flex-start; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.odds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_wrapper {
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.button_wrapper button {
+  align-self: flex-start;
+  padding: 2rem;
+  font-size: large;
+  font-weight: 600;
+}
+.cash_rewards {
+  flex: 2;
+  margin-right: 1rem;
+  /* background-color: red; */
+  /* width: 60%; */
+  align-self: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cash_rewards ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.cash_rewards ul li {
+  margin-bottom: 8px;
+  font-size: larger;
+  line-height: 1.5;
+  font-family: "ProximaNovaReg";
+}
+.show_more {
+  color: rgb(59, 113, 248);
+}
+.see_details {
+  color: rgb(59, 113, 248);
+  margin-top: 1rem;
+  font-family: "ProximaNovaReg";
+}
+.see_details a {
+  color: rgb(59, 113, 248);
+  text-decoration: none;
+  font-family: "ProximaNovaReg";
+  font-size: large;
+}
+.apply_button {
+  width: 88%;
+  /* border: 2px solid red; */
+  margin-top: 2rem;
+
+  padding: 0;
+  border: none;
+  margin-bottom: 2.6rem;
+}
+.apply_button button {
+  padding: 0.8rem 0.5rem;
+  padding-top: 0.8rem;
+  margin: 0;
+  width: 100%;
+  outline: none;
+  background-color: #fc6c3c;
+  color: white;
+  border: none;
+  height: 100%;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: 600;
+  font-family: "ProximaNovaReg";
+}
+.odds_span {
+  display: none;
+}
+.approval {
+  margin-right: 5px;
+  font-size: large;
+  font-weight: 500;
+  font-family: "ProximaNovaReg";
+}
+.odds {
+  font-size: large;
+  font-weight: 500;
+  font-family: "ProximaNovaReg";
+}
+@media (max-width: 500px) {
+  .nabar-ul {
+    display: none;
+  }
+  .nabar-ul-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px 0;
+    width: 100%;
+  }
+  .nabar-ul-mobile li {
+    padding: 2px;
+    display: block;
+  }
+  .nabar-ul-mobile li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    font-family: "ProximaNovaReg";
+  }
+  .banner {
+    background-color: #23143a;
+    width: 100%;
+    min-height: 95vh;
+    background-image: url(./images/banner_mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0;
+  }
+  .content {
+    background-color: white;
+    /* background-color: #23143a; */
+    width: 100%;
+    min-height: 160vh;
+    /* background-image: url(./images/banner.svg);
+  background-repeat: no-repeat; */
+    margin-top: 0;
+  }
+  .credit_opportunity_description {
+    align-self: flex-start;
+    line-height: 1.3;
+    font-size: x-large;
+    font-family: "ProximaNovaBold";
+  }
+  .ratings_Wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .ratings {
+    display: none;
+  }
+  .barclaycard_desc {
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+  .barclaycard_desc h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "ProximaNovaReg";
+  }
+  .credit_opportunity {
+    min-height: 143vh;
+    /* height: 90vh; */
+    background-color: #f0f2f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    width: 100%;
+    margin: 0;
+  }
+  .credit_opportunity_wrapper {
+    width: 100vw;
+    height: 100%;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1rem;
+  }
+  .payment_promo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: center; */
+  }
+  .left_wrapper {
+    width: 100%;
+    display: flex;
+    margin-left: 0px;
+  }
+  .approval_wrapper {
+    flex: 1;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin-top: 0;
+    align-self: stretch;
+    /* margin-bottom: 1rem; */
+    margin-left: 1.7rem;
+  }
+  .apply_button {
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+
+    padding: 0;
+    border: none;
+    margin-bottom: 2.6rem;
+  }
+  .apply_button button {
+    padding: 0.9rem 0.5rem;
+    padding-top: 0.8rem;
+    margin: 0;
+    width: 100%;
+    outline: none;
+    background-color: #fc6c3c;
+    color: white;
+    border: none;
+    height: 100%;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 600;
+    font-family: "ProximaNovaReg";
+  }
+  .cash_rewards {
+    flex: 2;
+    margin-right: 1rem;
+
+    align-self: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    /* border: 2px solid red; */
+    min-height: 35vh;
+  }
+  .cash_rewards ul {
+    width: 100%;
+    padding: 0 1.5rem;
+    padding-right: 1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cash_rewards ul li {
+    margin-bottom: 8px;
+    font-size: larger;
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: "ProximaNovaReg";
+  }
+  .credit_opportunity_wrapper hr {
+    border: none;
+    height: 1.5px;
+    background: rgb(134, 131, 131);
+  }
+  .see_details {
+    color: rgb(59, 113, 248);
+    margin-top: 1.5rem;
+    font-size: larger;
+    font-family: "ProximaNovaReg";
+  }
+  .see_details a {
+    color: rgb(59, 113, 248);
+    text-decoration: none;
+    font-family: "ProximaNovaReg";
+    font-size: larger;
+  }
+  .odds_approval {
+    /* align-self: flex-start; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    flex-direction: row;
+  }
+
+  .approval {
+    margin-right: 5px;
+    font-size: large;
+    font-weight: 500;
+    font-family: "ProximaNovaBold";
+  }
+  .odds {
+    font-size: large;
+    font-weight: 500;
+    font-family: "ProximaNovaBold";
+  }
+}
